@@ -2,8 +2,9 @@ const days=document.getElementById('days');
 const hours=document.getElementById('hours');
 const minutes=document.getElementById('minutes');
 const seconds=document.getElementById('seconds');
-const message=document.getElementById('message');
 const time=document.getElementById('time');
+const btn=document.getElementById('btn');
+const btn_test=document.getElementById('btn_test');
 
 const currentYear=new Date().getFullYear();
 const newYearTime=new Date(`May 4  ${currentYear} 00:00:00`); 
@@ -20,12 +21,12 @@ function updateCountDown(){
     hours.innerHTML=h<10?'0'+h:h;
     minutes.innerHTML=m<10?'0'+m:m;
     seconds.innerHTML=s<10?'0'+s:s;
-    
+
     if(d < 1){
         if(h < 1){
             if(m < 1){
                 if(s < 1){
-                    message.style.display = "contents";
+                    btn.style.display = "block";
                     time.style.display = "none";
                 }
             }
@@ -34,4 +35,17 @@ function updateCountDown(){
     }
 }
 
-setInterval(updateCountDown,1000);
+btn.onclick=function(){
+    message=document.getElementById('message').style.display='block';
+    btn.remove();
+}
+
+btn_test.onclick=function(){
+    message=document.getElementById('message').style.display='block';
+    btn_test.remove();
+    time.remove();
+}
+
+setInterval(updateCountDown,1000) 
+
+
