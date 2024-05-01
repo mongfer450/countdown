@@ -7,7 +7,7 @@ const btn=document.getElementById('btn');
 const btn_test=document.getElementById('btn_test');
 
 const currentYear=new Date().getFullYear();
-const newYearTime=new Date(`May 4  ${currentYear} 00:00:00`); 
+const newYearTime=new Date(`May 1  ${currentYear} 00:00:00`); 
 
 function updateCountDown(){
     const currentTime=new Date();
@@ -39,13 +39,6 @@ btn.onclick=function(){
     message=document.getElementById('message').style.display='block';
     btn.remove();
 }
-
-btn_test.onclick=function(){
-    message=document.getElementById('message').style.display='block';
-    btn_test.remove();
-    time.remove();
-}
-
 setInterval(updateCountDown,1000) 
 
 

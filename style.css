@@ -1,12 +1,12 @@
 * {
     margin: 0;
     padding: 0;
-    color: rgba(240, 255, 255, 0.932);
+    color: rgba(48, 182, 159, 0.932);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 body{
-    background-color: rgba(43, 42, 42, 0.979);
+    background-color: rgba(216, 245, 226, 0.384);
     display: flex;
     justify-content: center;
     text-align: center;
@@ -41,28 +41,19 @@ body{
 }
 
 #btn{
-    color: white;
-    background-color: black;
-    zoom: 500%;
-    animation-name: spin;
-    animation-duration: 15000ms;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear; 
-    border-radius: 5px;
+    padding: 2px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(68, 148, 131);
+    border-color:  rgb(68, 148, 131);
     display:none;
+    zoom:500%;
     margin-top: 20px;
-}
-
-#btn_test{
-    margin-top: 100px;
-    color: white;
-    background-color: black;
-    border-radius: 5px;
-    zoom: 200%;
+    border-radius: 4px;
 }
 
 #btn:hover{
-    animation-duration: 0ms;
+    background-color: rgba(68, 148, 131, 0.425);
+    border-color: rgba(68, 148, 131, 0.404);
 }
 
 h2{
@@ -71,9 +62,10 @@ h2{
 }
 
 .text{
-    color: white;
-    animation: changeColour 15s infinite;
-    margin: 10px;    
+    animation: changeColour 15s infinite; 
+    margin-top: 50px;
+    font-size: 55px;
+    text-shadow: rgba(0, 0, 0, 0.35) 1px 1px 2px;
 }
 
 img{
@@ -85,15 +77,24 @@ img{
     animation-timing-function: linear; 
 }
 
-img:hover{
-    width: 300px;
-    height: 300px;
-    margin: 50px;
-    animation-name: spin;
-    animation-duration: 0ms;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear; 
+.card{
+    margin-top: 150px;
+    margin-bottom: 50px;
+    padding: 100px 0 250px 0;
+    border-radius: 20px;
+    background-color: #74c4b8;
+    box-shadow: #60b6a83a 0px 5px 15px;
 }
+
+.card:hover{
+    background-color: #74c4b838;
+}
+
+p{
+    color: #74c4b8;
+    font-size: 35px;
+}
+
 
 @keyframes spin {
     from {
@@ -105,7 +106,7 @@ img:hover{
 }
 
 @keyframes changeColour {
-    from {color: white;}
+    from {color: rgb(211, 228, 227);}
     to {color:#60B6A8;}
 
     0% {
