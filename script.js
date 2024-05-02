@@ -7,7 +7,7 @@ const btn=document.getElementById('btn');
 const btn_test=document.getElementById('btn_test');
 
 const currentYear=new Date().getFullYear();
-const newYearTime=new Date(`May 1  ${currentYear} 00:00:00`); 
+const newYearTime=new Date(`May 4  ${currentYear} 00:00:00`); 
 
 function updateCountDown(){
     const currentTime=new Date();
