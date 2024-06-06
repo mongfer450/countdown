@@ -1,4 +1,3 @@
 Countdown Website
 
-1. Timer function
-2. Hidden Contents when time up
+this project for learn countdown function and surprice my girlfriend birthfday 😆
